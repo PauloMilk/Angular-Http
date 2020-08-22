@@ -24,9 +24,8 @@ export class ProductService {
       ).pipe(
         filter(([products, departments]) => products != null && departments != null),
         map(([products, departments]) => {
-          for (let p of products) {
+          for (const p of products) {
             const ids = (p.departments as string[]);
-            console.log(p);
             p.departments = ids.map((id) => departments.find(dep => dep._id === id));
           }
           return products;

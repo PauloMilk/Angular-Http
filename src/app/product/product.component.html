@@ -6,13 +6,13 @@
     <form [formGroup]="productForm" (ngSubmit)="save()" fxLayout="column" fxLayoutAlign="space-between" #form="ngForm">
       <input type="hidden" formControlName="_id">
       <mat-form-field>
-        <input matInput formControlName="name" type="text" placeholder="Product Name">
+        <input matInput formControlName="name" type="text" placeholder="Product Name" autocomplete="off" action="">
       </mat-form-field>
       <mat-form-field>
-        <input matInput formControlName="stock" type="number" placeholder="Product Stock">
+        <input matInput formControlName="stock" type="number" placeholder="Product Stock" autocomplete="off" action="">
       </mat-form-field>
       <mat-form-field>
-        <input matInput formControlName="price" type="number" placeholder="Product Price">
+        <input matInput formControlName="price" type="number" placeholder="Product Price" autocomplete="off" action="">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Departaments</mat-label>
