@@ -15,7 +15,7 @@
         <input matInput formControlName="price" type="number" placeholder="Product Price" autocomplete="off" action="">
       </mat-form-field>
       <mat-form-field>
-        <mat-label>Departaments</mat-label>
+        <mat-label>Departments</mat-label>
         <mat-select formControlName="departments" multiple>
           <mat-select-trigger>
             {{productForm.value.departments ? productForm.value.departments[0]?.name : ''}}
